@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5114ddbb-7c4e-4c65-a989-5bcd06b743ed" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Introduction_To_Software_Development/AllAboutStrings.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2veUbvbtXNnVy4IlIUYNIIpQkAL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AllAboutStrings.executor": "Run",
+    "Application.BmiMain.executor": "Run",
+    "Application.Car.executor": "Run",
+    "Application.CarSimulator.executor": "Run",
+    "Application.ConstructorReview.executor": "Run",
+    "Application.CurrencyConversion.executor": "Run",
+    "Application.DeclaringAndInitializingVariables.executor": "Run",
+    "Application.DrivingSimulator.executor": "Run",
+    "Application.HeroMain.executor": "Run",
+    "Application.KitchenHelper.executor": "Run",
+    "Application.KitchenHelper1.executor": "Run",
+    "Application.KitchenHelper2.executor": "Run",
+    "Application.KitchenHelper3.executor": "Run",
+    "Application.MODULE2.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.ShapeMain.executor": "Run",
+    "Application.ZooMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Other computers/My Mac/Desktop/Amazon Junior Software Developer",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.CheckedExceptions">
+    <configuration name="BmiMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Introduction_To_Software_Development.BmiMain" />
+      <module name="Amazon Junior Software Developer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Introduction_To_Software_Development.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Introduction_To_Software_Development.Car" />
+      <module name="Amazon Junior Software Developer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Introduction_To_Software_Development.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckedExceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProgrammingWithJava.CheckedExceptions" />
+      <module name="Amazon Junior Software Developer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProgrammingWithJava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MODULE2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Introduction_To_Software_Development.MODULE2" />
+      <module name="Amazon Junior Software Developer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Introduction_To_Software_Development.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CheckedExceptions" />
+        <item itemvalue="Application.BmiMain" />
+        <item itemvalue="Application.Car" />
+        <item itemvalue="Application.MODULE2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5114ddbb-7c4e-4c65-a989-5bcd06b743ed" name="Changes" comment="" />
+      <created>1744505107098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744505107098</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Introduction_To_Software_Development/MODULE2.java</url>
+          <line>5</line>
+          <properties class="Introduction_To_Software_Development.MODULE2" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Introduction_To_Software_Development/Main.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

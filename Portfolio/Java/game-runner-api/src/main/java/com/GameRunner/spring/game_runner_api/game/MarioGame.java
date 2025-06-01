@@ -1,0 +1,22 @@
+package com.GameRunner.spring.game_runner_api.game; // notice this package has .game at the end
+// this makes it a sub-package of the com.GameRunner.spring.game_runner_api package
+
+public class MarioGame implements GamingConsole{ // this is considered tightly coupled code
+	
+	public void up() {
+		System.out.println("Jump");
+	}
+	
+	public void down() {
+		System.out.println("Down into a hole");
+	}
+	
+	public void left() {
+		System.out.println("Stop");
+	}
+	
+	public void right() {
+		System.out.println("Accelerate");
+	}
+
+}

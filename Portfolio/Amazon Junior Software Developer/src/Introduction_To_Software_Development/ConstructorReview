@@ -1,0 +1,86 @@
+package Introduction_To_Software_Development;
+
+public class ConstructorReview {
+        public static void main(String[] args) {
+
+            Car2 sienna = new Car2("Toyota", "Sienna", "White", 2012);
+
+            System.out.println(sienna);
+
+            sienna.turning();
+            sienna.accelerate();
+
+            Car2 mystery = new Car2();
+            System.out.print(mystery);
+
+
+        }
+}
+
+    // Field Variables
+
+class Car2 {
+    String make;
+    String model;
+    String color;
+    int year;
+
+    public Car2() {
+        this.make = "Unknown";
+        this.model = "Unknown";
+        this.color = "White";
+        this.year = 0;
+    }
+
+    public Car2(String make, String model, String color, int year) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "Car2{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                '}';
+    }
+
+    /*
+    There are three types of constructors:
+    Default - defaults the attributes to null
+    No-argument - starts with no arguments
+    Parameterized - has parameters.
+    */
+
+    //Default:
+
+
+    // No-argument:
+
+
+
+
+
+    // Parameterized:
+
+
+
+    // Actions:
+
+    public void turning() {
+        System.out.println("The car is turning!");
+    }
+
+    public void accelerate() {
+        System.out.println("The car is accelerating!");
+    }
+}
+
+
+
