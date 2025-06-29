@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Intro_And_IntelliJ/Intro_And_IntelliJ.iml" filepath="$PROJECT_DIR$/Intro_And_IntelliJ/Intro_And_IntelliJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaMasterClass.iml" filepath="$PROJECT_DIR$/.idea/JavaMasterClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KeywordsAndExpressions/KeywordsAndExpressions.iml" filepath="$PROJECT_DIR$/KeywordsAndExpressions/KeywordsAndExpressions.iml" />
+    </modules>
+  </component>
+</project>

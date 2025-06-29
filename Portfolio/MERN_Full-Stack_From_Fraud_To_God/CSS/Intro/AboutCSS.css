@@ -1,0 +1,24 @@
+/* This is a comment in CSS
+    It can span multiple lines
+    and is ignored by the browser. */
+
+    /*  SELECTOR    PROPERTY    VALUE
+           img     { width :     30 px; }    1 pixel is = 1 / 96  of an inch*/
+
+    /* 
+
+    tags  p, a, main   {
+       background-color: black;      <--- this is a block element
+         color: white;                <--- this is a property
+       text-color: red;
+       display: block;
+    } */
+
+    /*
+    Inline: added directly to the HTML element
+    Interal: added inside the head tags in the <style> tag.
+    External: added in a CSS style sheet file, then added to the HTML file with a link tag.
+    */
+
+
+   

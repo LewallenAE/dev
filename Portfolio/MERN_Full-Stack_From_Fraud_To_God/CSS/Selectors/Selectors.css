@@ -1,0 +1,81 @@
+ /* SELECTORS:
+
+    Element
+    ID
+    Class
+    Grouping
+
+    */
+
+/* Universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body selector */
+
+    body{
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+
+
+/* Element selector */
+
+    p{
+        color: blue;
+        background: gold;
+        font-size: 20px;
+        font-style: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    /* ID selector */
+
+    #secondPTag{
+        color: red;
+        background: black;
+        font-size: 30px;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    /* grouped selector*/
+    h1, p{
+        color: violet;
+        background: lightgray;
+        font-size: 25px;
+        font-style: normal;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        flex: auto;
+
+    }
+
+    /* class selector*/
+
+    .classSelector{
+        color:cornsilk;
+        background-color:darkblue;
+        text-align: center;
+        font-size: 16px;;
+    }
+
+
+    div p{
+        color: green;
+        background: lightcoral;
+        font-size: 18px;
+        font-style: normal;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    
