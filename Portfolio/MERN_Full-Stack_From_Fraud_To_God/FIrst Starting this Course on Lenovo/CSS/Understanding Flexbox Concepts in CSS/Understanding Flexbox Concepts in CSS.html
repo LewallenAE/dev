@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Flexbox Concepts in CSS</title>
+
+    <style>
+
+        .container{
+            
+            /* VH is used to denote 83% of the screen height. */
+            height: 83vh;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-direction: column;
+            justify-content: center;
+            /* justify-content: right; */
+            /* justify-content: left; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+
+            
+        }
+
+        .items{
+
+            background-color: aqua;
+            font-size: 20px;
+            width: 150px;
+            height: 150px;
+            border: 2px dotted black;
+            margin: 5px;
+        }
+
+        /* Order rearranges the order of the items / class */
+
+        /* Notice that Box 3 is in place 1 because up above in the "container" tag we are utilizing row-reverse for flex-direction */
+
+        #Box-1{
+            order: 3;
+            flex-grow: 2;
+
+        }
+        #Box-2{
+            order: 1;
+            flex-grow: 1;
+
+        }
+        #Box-3{
+            order: 4;
+            flex-shrink: 3;
+
+        }
+        #Box-4{
+            order: 2;
+            flex-shrink: 10;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--.items#Box-$*4, will automatically create class items with unique ID of 1-4 on four separate lines.-->
+
+    <div class="container">
+
+       <div class="items" id="Box-1">Box-1</div>
+       <div class="items" id="Box-2">Box-2</div>
+       <div class="items" id="Box-3">Box-3</div>
+       <div class="items" id="Box-4">Box-4</div>
+    
+    </div>
+    
+</body>
+
+</html>

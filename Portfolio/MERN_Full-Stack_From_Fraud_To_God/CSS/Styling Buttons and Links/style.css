@@ -1,0 +1,103 @@
+.container {
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(163, 203, 221);
+}
+
+.container > p {
+    text-align: center;
+    background-color: bisque;
+    
+}
+
+.container > a {
+    display: inline-block;
+   
+}
+
+.container > a:hover {
+    background-image: url('../../First Starting this Course on Lenovo/Images/Clown.jpg');
+    background-size: cover;
+    color: lime;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.container > a:visited {
+    text-decoration: line-through !important;
+    color: gray;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.highlight {
+    background-color: salmon;
+    color: black;
+
+}
+
+/* Animation for glowing effect */
+/* Source: https://codepen.io/anon/pen/KKdXbY */
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 40px rgba(0, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+}
+
+
+.styled-button {
+    animation: glowPulse 2s infinite ease-in-out;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #111, #222);
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.styled-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+    transform: scale(0);
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.styled-button:hover::before {
+    transform: scale(1);
+}
+
+.styled-button:hover {
+    transform: scale(1.15) rotate(1deg);
+    background-image: url('../../First Starting this Course on Lenovo/Images/800px-Hummingbird.jpg');
+    background-size: cover;
+    border: dotted 3px lemonchiffon;
+    transform: scale(1.15) rotate(1deg);
+    /*box-shadow: 0 0 20px 6px rgba(255,255,255,0.6),
+                0 0 40px 12px rgba(173,216,230,0.3);*/
+    color: white;
+    z-index: 5;
+}

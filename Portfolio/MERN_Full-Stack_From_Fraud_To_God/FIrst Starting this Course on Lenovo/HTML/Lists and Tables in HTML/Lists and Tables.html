@@ -1,0 +1,137 @@
+<!-- Lists are used to display information or content in a list format. Let's insert the boiler template, then rename to the title to Lists and Tables-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables</title>
+</head>
+
+<body>
+    <!-- Use the <li></li> to create a list. But remember that <ul> tags are used before <li> tags. <ol></ol> tags are for ordered lists-->
+
+        <!-- Notice that UL will not work with Roman Numerals and other stuff since it is not an ordered list. You must use OL for alphabet, numbers, roman numerals, etc. UL can be used for different types of bullet points.-->
+
+    <!--UL with LI provides bullet points-->
+    <ul>
+        <li>Bread</li>
+        <li>Jam</li>
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Paper Plates</li>
+        <li>Paper Towels</li>
+    </ul>
+
+    <!-- UL with Disc provides another bullet list-->
+    <ul type="disc">
+        <li>Bread</li>
+        <li>Jam</li>
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Paper Plates</li>
+        <li>Paper Towels</li>
+    </ul>
+
+    <!-- For a hollow bullet point use circle-->
+
+    <ul type="circle">
+        <li>Bread</li>
+        <li>Jam</li>
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Paper Plates</li>
+        <li>Paper Towels</li>
+    </ul>
+
+    <!-- Change the bullet format to square by using type square-->
+
+    <ul type="Square">
+        <li>Bread</li>
+        <li>Jam</li>
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Paper Plates</li>
+        <li>Paper Towels</li>
+    </ul>
+
+    <!-- Use I for Roman Numerals-->
+
+    <ol type="I">
+        <li>Bread</li>
+        <li>Jam</li>
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Paper Plates</li>
+        <li>Paper Towels</li>
+    </ol>
+
+        <!-- Adding stair steps or different "levels" for an ordered list-->
+
+        <ol type="A">
+            <li>Bread</li>
+            <li>Jam</li>
+            <li>Milk</li>
+            <ol type="a">
+                <li>Paper Plates</li>
+                <li>Butter</li></ol>
+            <li>Paper Plates</li>
+            <li>Paper Towels</li>
+        </ol>
+
+        <!-- Now we can insert a table tag <table></table> and table rule is <tr></tr> and <td></td> for table data <th></th> is a table head tag-->
+        <table>
+            <th>School student information</th>
+            <tr>Student Name</tr>
+            <td>Jack</td>
+
+        </table>
+
+        <!-- More advanced we use the Table Head and Table Body tags <thead></thead> <tbody> </tbody> remember the <tr></tr> tag is for a table row so we use that and place the code inside of the <tr></tr> tag. If we want a break we make a new TR tag. Having more TD lines will increase the amount of colums. Look at the last string of code here as an example of 5 rows.-->
+
+        <table>
+            <th>School: Student Information</th>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role No.</th>
+                    <th>Grade</th>
+                </tr>
+                
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Jack</td>
+                    <td>1</td>
+                    <td>A+</td></tr>
+                
+                <tr>
+                    <td>Ron</td>
+                    <td>2</td>
+                    <td>A</td></tr>
+                
+                <tr>
+                    <td>Sean</td>
+                    <td>3</td>
+                    <td>C</td>
+                </tr>
+
+                <!--This tag will have 5 columns but they will not have a column heading as we did not create a table head in the thead portion.-->
+                <tr>
+                    <td>John</td>
+                    <td>4</td>
+                    <td>F</td>
+                    <td>Professor</td>
+                    <td>Tenured</td>
+                </tr>
+            </tbody>
+    
+        </table>
+</body>
+
+</html>

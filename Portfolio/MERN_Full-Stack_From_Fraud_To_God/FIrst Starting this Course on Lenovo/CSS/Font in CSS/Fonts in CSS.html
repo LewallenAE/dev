@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+
+<!-- Unsafe webfonts are fonts that are not available in the font family. These are AKA Websafe fonts -->
+
+<!-- The below is a font stack. If the Franklin Gothic font is not available then it will switch to Arial Narrow, then Aria, and finally Sans-serif-->
+
+<!-- You can add / import other fonts. Go to fonts.google.com -->
+
+<!-- Find a specific font you wish to use, click the font which will usually bring up a new window, and finally click "select"-->
+
+<!-- This should bring up a window in the right pain. To link the file you have to select the whole link code. Make sure to link this in your <head></head> tag.  -->
+
+<!-- Unless you assign the specific font in the <p></p> tag a tag specifically for the imported font. -->
+
+<!-- If you already have your <style></style> tags created then you do not need to copy them from the import code. However if they are not currently created, then you can go ahead and copy them. -->
+
+<!-- The @import tag has imported the font to local storage. -->
+
+    <style>
+
+/* Imported from Google Fonts */
+
+        @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+        *{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+/* To add the imported font, we use the following code. This can be copied directly from the font pane that came up previously. (This is found near the bottom.) Paste it or type it directly as shown.*/
+
+/* Finally using inspect element we can see that the font family: 'Franklin Gothic Medium', 'Arial Narrow', Aria;, sans-serif; is "strike through". The Delicious Handrawn is now being used.*/
+
+/* Imported from Google Fonts */
+        *{font-family: 'Delicious Handrawn', cursive;}
+
+
+/* <!-- P tag selector notice this only works in the style tag. Change the font to 60 pixels. Notice how large the font is now. Change the font back to a smaller one, say 20 pixels: .;
+--> */
+
+/* Notice that a certain size of pixels might be too hard to read on a website. Change the font back to 30 px */
+
+/* Other uses of font tag */
+
+/* The following allows h1 to have a different fon than what is tagged with p.  */
+h1{ font-size: 60px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+/* Using inspect clicking the box with the arrow in the top left, and clicking a font. You can change the elements on the fly, all though they are not permanent. the line-height: em command changes the distance between the lines. */
+
+p { font-size: 30px;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    font-style: italic;
+    line-height: 2em;}
+
+    </style>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+    
+   
+
+</head>
+<body>
+    <h1> Fonts </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque reiciendis delectus aut quod facilis dolorem saepe assumenda impedit adipisci.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque reiciendis delectus aut quod facilis dolorem saepe assumenda impedit adipisci.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque reiciendis delectus aut quod facilis dolorem saepe assumenda impedit adipisci.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque reiciendis delectus aut quod facilis dolorem saepe assumenda impedit adipisci.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque reiciendis delectus aut quod facilis dolorem saepe assumenda impedit adipisci.
+    </p>
+    
+</body>
+</html>

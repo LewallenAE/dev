@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index PProperty In CSS</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 120px;
+            border: dotted black;
+        }
+        #red{
+            background-color: red;
+            position: relative;
+            z-index: 100;
+            /* Using the z-index of 100 will stack the red box on top of the green box. */
+        }
+        #green{
+            background-color: green;
+            position: relative;
+            /* visibility: hidden; */
+            /* display: none; */
+            /* Vanish the box and suggest there used to be a box use visbility: hidden */
+            /* Vanish the box and do not suggest there used to be a box use display: none */
+        }
+        #blue{
+            background-color: blue;
+            position: relative;
+            
+            /* Notice how the red is on top of blue and green, but blue is on top of green. */
+        }
+        #yellow{
+            background-color: yellow;
+            position: relative;
+        }
+        .box1{
+            width: 35px;
+            height: 35px;
+            border: solid black 2px;
+        }
+
+    </style>
+</head>
+    <!-- Body is parent, green is child, red and blue are siblings. -->
+<body>
+    <!-- Blue, green, red, is the size of the Z-index from largest to smallest. Because blue is last, green is second, red is first.-->
+    <!-- If you want the red box to stack on top of the green box, then you need to specify the Z-index value. -->
+    <!-- Changing the Z-index value of the yellow box will automatically inherit all of the properties of the green box because it is the child of the class. -->
+    <!-- Take the yellow out and make it it's own box. -->
+    <div class="box" id="red"></div>
+    <div class="box" id="green"></div>
+    <div class="box1" id="yellow"></div>
+    <div class="box" id="blue"></div>
+       
+</body>
+</html>

@@ -1,0 +1,34 @@
+/* 1 - Selector - Image */
+/* 2 - Property width */
+/* 3 - Value 30px */
+/* 4 - Finds the element whose property will be set */
+/* 5 - Target HTML elements */
+/* 6 - Can target single or multiple HTML elements in markup*/
+/* 7 - Element selectors (html tags) */
+/* 8 - ID selectors (from HTML that are unique) */
+/* 9 - Class selecters (from HTML non unique) */
+/* 10 - Grouping Selectors */
+
+/* Universal Selectors */
+*{ margin: 0;
+    padding: 0;}
+
+/* Color Selectors */
+P{color: darkolivegreen;}
+
+/* Color and Grouping Selectors */
+div p{background-color: turquoise}
+
+div > span{border: 4px solid black}
+
+div + p{color: chocolate;}
+
+#secondparagraph{color: fuchsia;}
+
+h1, p{ color: beige;}
+
+.test{color: forestgreen;}
+
+
+
+

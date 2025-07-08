@@ -1,0 +1,47 @@
+
+
+
+<!-- The best practice for colors using Inline, Internal, and External methods is to be consistent and utilize the same method. Otherwise you can create a CSS file and make the changed on that side utilizing the link rel="stylesheet" href="filename" and make all of the changes over there. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal, External</title>
+    <style>
+
+        /* Internal Method */
+        p{color: maroon;} 
+
+        
+
+
+    </style>
+
+    <!-- External Method -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- /* Placing the Background color utilizing the Internal Method within the same header as the external method will override the external method. As we can see the background color is changed to coral.*/ -->
+
+    <style> p{background-color: coral};</style>
+</head>
+<body>
+    
+    <!-- Inline Method -->
+    <!--  <p style="color: blue;"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vitae sunt deserunt reiciendis. Ea blanditiis et error asperiores saepe voluptas?</p>  -->
+
+    <p style="color: blue;"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vitae sunt deserunt reiciendis. Ea blanditiis et error asperiores saepe voluptas?</p> 
+
+    <!-- Likewise if we use the Inline method, then it will override both the Internal and the External method. The closer the style tag is to the element then html will select that method for the background color. That is the reason why it overrides. This override also exists for the text color. -->
+
+        <p style="background-color: rgb(205, 196, 255);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto id et officiis ratione asperiores quo optio incidunt! Pariatur sint mollitia a tempore repellat cumque.</p>
+    
+    <a href="#">Click Here</a> 
+
+
+</body>
+</html>

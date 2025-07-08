@@ -1,0 +1,67 @@
+<!-- Box model concept is the box you see when you use inspect element on a website. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{ 
+
+            color: black;
+            background-color: beige;
+
+         /* Create space in between the two headings */
+
+            padding: 10px;
+            border: solid black;
+
+         /* Margin is the outmost layer, in our example this will actually create a space between the boxes */
+            margin: 10px;
+        
+         /* If you want a margin only on the top or bottom use margin top and margin bottom.*/
+
+         /* In the example putting a margin left and right will make squatty boxes, if we use large numbers. */
+
+            margin-left: 200px;
+            margin-right: 200px;
+    
+    }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+<!-- Div tag to specify a division -->
+<!-- Notice that they all have the div tag but they are indeed separate -->
+
+    <div class="container">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, hic?</p>
+        
+    </div>
+    <div class="container">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    <div class="container">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    <div class="container">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    
+</body>
+</html>

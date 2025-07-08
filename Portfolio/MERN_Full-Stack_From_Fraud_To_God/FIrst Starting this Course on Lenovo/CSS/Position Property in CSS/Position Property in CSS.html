@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in CSS</title>
+
+    <style>
+
+        .container{
+            border: solid red;
+            background: burlywood;
+            height: 1000px;
+
+        }
+        .box{
+            font-size: 25px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: inline-block;
+            
+        }
+    /* # is what we use to specify ID, . is what we use to specify class. */
+
+       #box1{
+
+    /* Notice that the fixed position command will keep box1 in the same spot no matter where you scroll. */
+
+            position: fixed;
+            top: 50%;
+            bottom: 50%;
+            border-bottom: 4px;
+            border-top: 4px;
+            border-right: 4px;
+            border-left: 4px;
+            border-radius: 6px;
+            border: dotted dodgerblue;
+            background-color: blue;
+            
+        } 
+
+        #box3{
+            top: 20px;
+            position: sticky;
+        }
+        #box4{
+            right: 10px;
+            bottom:  10px;
+
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        dt{
+            background: #b8c1c8;
+            border-bottom: 1px solid #989ea4;
+            border-top: 1px solid #717d85;
+            color: #fff;
+            font: bold 18px/21px Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 2px 0 0 12px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: -1px;
+
+        }
+        dd{
+            font: bold 20px/45px Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0 0 0 12px;
+            white-space: nowrap;
+
+        }
+
+        dd+dd{
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<!-- div.box#box*4  will create 4 lines with a class of box and an id of box1, we can then change them to box1,2,3,4 etc. Class is non-unique, id is unique, so we cannot assign the same name for the id element.-->
+
+<!-- We are also assigned an overall class of "container" for each box line. -->
+
+<body>
+    <div class="container">
+
+    <div class="box" id="box1">This is a box, this is box 1</div>
+    <div class="box" id="box2">This is a box, this is box 2</div>
+    <div class="box" id="box3">This is a box, this is box 3</div>
+    <div class="box" id="box4">This is a box, this is box 4</div>
+
+    <div>
+        <dt> Look at me</dt>
+        <dd>Stop</dd>
+        <dd>Looking</dd>
+        <dd>At</dd>
+        <dd>Me</dd>
+        <dd>You</dd>
+        <dd>Clown</dd>
+        <dd>Stop</dd>
+        <dd>Looking</dd>
+        <dd>At</dd>
+        <dd>Me</dd>
+        <dd>You</dd>
+        <dd>Clown</dd>
+        <dd>Stop</dd>
+        <dd>Looking</dd>
+        <dd>At</dd>
+        <dd>Me</dd>
+        <dd>You</dd>
+        <dd>Clown</dd>
+        <dd>Stop</dd>
+        <dd>Looking</dd>
+        <dd>At</dd>
+        <dd>Me</dd>
+        <dd>You</dd>
+        <dd>Clown</dd>
+        <dd>Stop</dd>
+        <dd>Looking</dd>
+        <dd>At</dd>
+        <dd>Me</dd>
+        <dd>You</dd>
+        <dd>Clown</dd>
+        <img src="/Images/Clown.jpg">
+    </div>
+</div>
+</body>
+</html>

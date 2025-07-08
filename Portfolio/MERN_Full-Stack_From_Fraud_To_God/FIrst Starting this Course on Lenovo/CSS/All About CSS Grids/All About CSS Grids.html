@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About CSS Grids</title>
+    <style>
+
+        /* Calculator */
+
+        .container{
+
+            display: grid;
+            border: 2px ridge black;
+            background-color: lightcoral;
+            /* Adjust the height for row & column 1, 2, and 3 automatically */
+            /* grid-template-columns: auto auto auto */
+            /* grid-template-rows: 50px 100px 200px; */
+            /* fr = fractional row. */
+            /* grid-template-rows: 30px 30px 30px; */
+            /* grid-template-columns: 30px 30px 30px; */
+            /* Space in between columns */
+            /* column-gap: normal; */
+            /* Space between rows */
+            /* row-gap: normal;*/
+            /* justify-content: center; */
+            /* align-items: center; */
+            grid-gap: 20px; 
+            /* grid-template-columns: auto auto auto; */
+            /* grid-column: 1 / 3; */
+            /* grid-row: 1 / span 3; */
+            
+            /* this creates 4 grid areas for the navbar, section, aside, etc. */
+            grid-template-areas: 'navbar navbar navbar navbar'  'section section section aside' 'footer footer footer footer';
+            
+
+        }
+
+        .box{
+            
+            border: 2px ridge black;
+            background-color: burlywood;
+            padding: 15px;
+            /* text-align: center; */
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="box" id="navbar">
+          <center> Home About Services </center> 
+        </div>
+
+        <div class="box" id="aside">
+            Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="box" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam libero, incidunt excepturi saepe tempore placeat nisi illum? Earum ipsam ullam inventore optio quas debitis praesentium voluptates minus asperiores repellendus reprehenderit, quo, pariatur tempora deleniti laborum maxime voluptatem labore quis corrupti odio, consequatur temporibus. Sed sunt sint ratione quasi? Facilis consectetur corporis temporibus magni eum possimus. Sint labore iste minima cupiditate vitae! Dignissimos est tempore vel quam illo aspernatur cum ratione illum, enim quo fugiat praesentium earum quas nemo doloremque nostrum. Eius fuga alias, quae nihil vel blanditiis. Quibusdam nihil veniam deserunt possimus quaerat vero alias? Praesentium voluptatem laudantium saepe?
+        </div>
+
+        <footer class="box">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolor repellendus optio dicta cupiditate nisi fugit minima odio autem perspiciatis? Sequi obcaecati inventore, ad in, quam quasi accusantium unde sapiente ex mollitia ipsa nesciunt laboriosam. Consequatur harum voluptatem provident nisi esse. Adipisci in id voluptatem molestias quae sit veniam vitae omnis tempora quibusdam, non consequatur, tenetur quis eveniet, dignissimos quo.
+
+        </footer>
+
+
+
+       <!-- div.box{Box-$}*9 will create nine div class with box in the text-->
+       <!-- <div class="box" style="grid-column: 1 ; grid-row: 
+        1 ;" ><button>1</button></div>
+       <div class="box" style="grid-column: 2 ; grid-row: 1;"><button>2</button></div>
+       <div class="box" style="grid-column: 3 ; grid-row: 1;"><button>3</button></div>
+       <div class="box"style="grid-column: 1 ; grid-row:  2;"><button>4</button></div>
+       <div class="box" style="grid-column: 2 ; grid-row: 2;"><button>5</button></div>
+       <div class="box" style="grid-column: 3 ; grid-row: 2;"><button>6</button></div>
+       <div class="box" style="grid-column: 1 ; grid-row: 3;"><button>7</button></div>
+       <div class="box" style="grid-column: 2 ; grid-row: 3;"><button>8</button></div>
+       <div class="box" style="grid-column: 3 ; grid-row: 3;"><button>9</button></div>
+       <div class="box" style="grid-column: 2 ; grid-row: 4;"><button>10</button></div> -->
+
+    </div>
+    
+</body>
+</html>

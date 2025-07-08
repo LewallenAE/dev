@@ -1,0 +1,78 @@
+<!-- Please note that the File Folders name cannot have special characters such as & otherwise running on the server will not work!!!!-->
+
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Input Tags In HTML</title>
+</head>
+
+        <!-- If running on the server does not work use the run debug option!-->
+
+        <!-- Forms are nothing more than an application form that you can use to collect information or input from the user.. -->
+
+         <!-- Start with the title tag (above), then the h1 tag, provide a title for the form, and then use the form tag with "action" and the backend tag for the information to be stored and accessed "backend.php".
+    
+         Finally we must have the input method which is input text, put the description of what needs to be put into the form before the "input" tag-->
+
+    <h1>Student Admission Form</h1>
+    <form action="backend.php">
+
+        <!-- <br> tag will put a break in the lines. <div></div> tag will separate the lines with a space. -->
+
+        <!-- Adding a label tag will make the cursor jump autmoatically to that labels box. If you don't have a label tag then you will be able to highlight the text. But you must identify it with the id="" tag and place the same name in the id="" tag-->
+
+        <label for="student name">Student Name:</label>
+        
+        <!-- ID - These are unique such as an individual student. Class - These can be replicated such as a yellow team or red team.-->
+
+    <br> <div><input type="text" name="student name" value="" placeholder="Enter Your Name" id="student name" class=""></div> 
+
+        <label for="Contact Number"> Contact Number:</label>
+
+    <br>  <div><input type="number"name="contact"id="Contact Number" placeholder="Enter Your Contact Number"></label></div>
+
+    <label for="Email"> Email:</label>
+
+    <br> <div><input type="email" name="email" id="Email" placeholder="Insert Your Email"></div>
+
+    <!-- If names for radio buttons are NOT the same then you will be able to select all the radio buttons with different names. If you want to be able to only select one radio button, then you will want all of the radio buttons to have the same name. -->
+
+
+    <br> <div>Gender: Male <input type="radio" name="gender" id=""> Female <input type="radio" name="gender" id=""></div>
+
+    <!-- Putting checked  in the line will have the checkbox automatically checked.-->
+    <br> <div>Do you accept the terms and conditions? <input type="checkbox" name="checkbox" id=""></div>
+
+    <br><div>DOB: <input type="date" name="DOB" id=""></div>
+
+    <!-- To add an image file you must use accept="image/*" so that all file formats will be accepted."-->
+    <br><div>Upload your image <input type="file" name="Upload your file" id="" accept="image/*"></div>
+
+    <br>
+
+    Residential Address: <textarea name="Address" id="" cols="10" rows="10" placeholder="You can input your residential address here. The box is draggable to make it larger or smaller."></textarea>
+
+    <br>
+    Web Dev <select name="options"id=""">
+        <option value="">Frontend</option>
+        <option value="">Backend</option>
+        <option value="" selected>Fullstack</option>
+    </select>
+
+
+    <!-- Below is how we place a submit form. However, by submitting we will get an error because we do not have a "backend" -->
+    <br> 
+
+    <input type="submit" value="submit form">
+    <input type="reset" value="reset form">
+
+    <!-- Using button will allow you to make a button that has your own function by using CSS more on this later.-->
+    <input type="button" value="">
+        
+    </form>
+
+</body>
+</html>

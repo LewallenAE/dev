@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Fonts in CSS</title>
+
+    <style>
+
+       /* *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Notice there is no comic sans MS in font-family
+            
+            let's try LimeLight font
+        } */
+        
+       
+      
+    </style>
+</head>
+<body>
+    <h1>Fonts in CSS</h1>
+    <p class="limelight-regular" id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rem natus cumque, vitae molestias laborum 
+        accusantium, ipsum, autem dicta repellendus porro enim molestiae quasi esse nemo quam quidem. Doloribus, modi?</p>
+        <br>
+        <p>If we want the font to be one that isn't preloaded. Then it must be loaded
+            and imported from the CSS file. This is done by using the @import rule.
+            or by linking to the font in the HTML file.
+        </p>
+
+        <link rel="stylesheet" href="style.css">
+
+<div class="card">
+  <h2>Traditional CSS Card</h2>
+  <p>This card is styled with an external stylesheet.</p>
+  <button>Click Me</button>
+</div>
+
+<div class="max-w-sm mx-auto mt-8 bg-white p-6 rounded-lg shadow-md font-sans">
+  <h2 class="text-xl mb-3">Tailwind CSS Card</h2>
+  <p class="text-base text-gray-600 mb-4">This card is styled entirely with utility classes.</p>
+  <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Click Me</button>
+</div>
+
+
+</body>
+</html>

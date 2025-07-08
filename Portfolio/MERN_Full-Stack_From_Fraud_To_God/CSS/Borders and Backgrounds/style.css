@@ -1,0 +1,66 @@
+#hi {
+
+    text-align: center;
+    text-shadow: blue 2px 2px 4px;
+    background-color: black;
+    color: white;
+}
+
+.borderStyle {
+    border-style: dashed;
+    border-color: green;
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+    border: px solid transparent;
+    border-image: url('../../First Starting this Course on Lenovo/Images/800px-Hummingbird.jpg') 100 repeat;
+}
+
+.borderStyle:hover {
+  transform: scale(1.05);
+  background-color: #e0ffe0;
+  border-color: lime;
+  cursor: pointer;
+ 
+}
+
+
+.clown-button {
+  background-image: url('../../First Starting this Course on Lenovo/Images/Clown.jpg');
+  background-size: cover;       /* Fill the button area */
+  background-repeat: no-repeat; /* No repeating unless you want full circus mode */
+  background-position: center;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.clown-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+.my-bg {
+    background-image: url('../../First Starting this Course on Lenovo/Images/Web Developer Logo Creative Commons.jpg');
+    background-size: repeat;;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

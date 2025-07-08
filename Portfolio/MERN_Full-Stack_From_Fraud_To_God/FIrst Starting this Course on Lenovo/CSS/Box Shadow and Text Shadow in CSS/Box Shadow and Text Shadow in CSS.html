@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow in CSS</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .box{
+            background-color: dodgerblue;
+            margin: 20px 10px;
+            padding: 20px 10 px;
+        }
+        #box1{
+            box-shadow: 10px 15px crimson;
+
+        }
+
+/* Notice that just using "background" allows us to have a gold background instead of using background-color: */
+
+        #box2{
+            box-shadow: black -10px -15px 10px 0px;
+        }
+
+/*Adding the extra pixels will blur the shadow.  */
+/* The order is offset-x by 10px, offset-y by 15px, blur-radius of 20px, spread-radius color by 5 px. */
+
+        #box3{
+            /* background-color: darkturquoise; */
+            box-shadow: rgb(64, 30, 255) 10px 15px 20px 5px;
+            text-shadow: 10px 10px white;
+            
+        }
+    </style>
+
+</head>
+
+<!-- Notice that if we do not have a double </div> syntax then web development, C++, and Java will all be on the same line. If we do incllude the doubled </div> for closing the div tag then they will be on separate lines. This is because despite the fact that there being no error, we were only closing one of the previously opened div tags. Look at:
+
+    <div class="container">
+        <div class="box" id="box1">
+
+We need both closing tags to close both of the syntax shown above. -->
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+        <h1>Web Development</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum sint magnam nemo delectus rem voluptatum odit quia perferendis. Itaque voluptates ipsa pariatur. Rem, odit!</div></p>
+
+
+    </div>
+    <div class="container">
+        <div class="box" id="box2">
+        <h1>C++</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum sint magnam nemo delectus rem voluptatum odit quia perferendis. Itaque voluptates ipsa pariatur. Rem, odit!</div></p>
+
+
+    </div>
+    <div class="container">
+        <div class="box" id="box3">
+        <h1>Java</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum sint magnam nemo delectus rem voluptatum odit quia perferendis. Itaque voluptates ipsa pariatur. Rem, odit!</div></p>
+
+
+    </div>
+    
+</body>
+</html>

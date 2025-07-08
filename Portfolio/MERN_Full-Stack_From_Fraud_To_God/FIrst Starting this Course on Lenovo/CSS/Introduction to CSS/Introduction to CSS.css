@@ -1,0 +1,16 @@
+/* 1.) CSS is called cascading style sheets. Commments are written with a /* *\ instead of a <!----> like in HTML. */
+/* 2.) CSS provides style to the raw HTML */
+/* 3.) It makes website more beautiful and modern looking */
+/* 4.) CSS also makes the website more responsive */
+/* 5.) Syntax - Selector (image), Property (Width), and Value(30px). */
+/* 6.) P, a , main, tags can all be grouped together. AKA group selectors */
+/* 7.) Declaration Block background-color: block etc. */
+/* 8.) Inline: CSS is added to the elemtns directly using style attribute */
+/* 9.) Internal CSS is kept insisde the head tags <style> tags
+ */
+ /* 10.) External CSS is kept separately inside .css style sheet */
+ /* 11.) Inline Level elements only span the length of the text Block level elements span the whole block regardless of the length of the text. */
+
+
+
+

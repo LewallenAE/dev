@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Variables and Properties</title>
+    <style>
+        :root{
+            --different-color: rgb(149, 32, 218);
+        }
+
+
+        .container{
+            background-color: var(--different-color)
+
+        }
+
+        /* Notice that the background-color: var(--different-color); will not work outside of the local environment of .container because we never specified where it is coming from. */
+
+        /* So just define a root element. */
+        span{
+            background-color: var(--different-color);
+        }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Full Stack Web Development</h1>
+        
+    </div>
+
+    <div class="container">
+        <h1>C++ Course</h1>
+        
+    </div>
+
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, consequatur obcaecati. Officiis laborum ad, illum dolor rerum ipsa autem commodi dicta velit fugiat harum! Delectus voluptate qui alias dolor esse, cum vero dolores officia unde. Iure ducimus accusamus quos! Inventore earum eos porro repudiandae animi?</span>
+    
+</body>
+</html>

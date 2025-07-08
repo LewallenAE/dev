@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background Property in CSS</title>
+    <style>
+    /* #borderStyle (or any other name that we have used for "id" to select to set parameters) */
+    /* 10px makes the border with 10 pixels */
+    /* border style solid makes the border solid */
+    /* border-color blue makes the color blue */
+    /* You can also use inspect element to look at the page on the fly. */
+
+        #borderStyle{
+
+            /*border-width: 10px;
+            border-style: solid ;
+            border-color: blue;
+            border-radius: 8px; */
+
+     /* You can make the border multiple colors */
+
+     /* Shorthand property to add a BORDER */
+
+            color: black;
+            border: 2px dashed salmon;
+            border-top: 3px dashed gold;
+            border-bottom: 5px dashed black;
+
+    /* To create rounded border edges */
+            border-top-right-radius: 6px;
+            border-bottom-left-radius: 6px ;
+            border-bottom-right-radius: 6px;
+            border-top-left-radius: 6px; }
+
+    /* To use a background image for your text */
+    /* repeat on the x axis */
+        #backgroundStyle{
+            color: aliceblue;
+            background-image: url("/Web\ Developer\ Logo\ Creative\ Commons.jpg");background-repeat: repeat-x;
+            background-color: darkslategrey;
+            height: 600px; 
+            width: 600px;
+            
+        
+    /* Center the image or place it in some other type of orientation */
+        background-position: center center;
+        
+    /* cover the background */
+
+    /* background-size: cover; */
+
+    /* Autosize the background */
+    /* background-size: auto; */
+
+    /* Does not repeat the image  */
+    /* Background-repeat: no-repeat; */
+    
+    /* Background attachment tag */
+        background-attachment: scroll;
+
+            
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+   <center><p id="borderStyle"> This is a simple text where we will style border in CSS / HTML</p>
+   </center>
+
+   <center><p id="backgroundStyle"> This is a simple text where we will style background in CSS / HTML</p>
+   </center>
+</body>
+</html>

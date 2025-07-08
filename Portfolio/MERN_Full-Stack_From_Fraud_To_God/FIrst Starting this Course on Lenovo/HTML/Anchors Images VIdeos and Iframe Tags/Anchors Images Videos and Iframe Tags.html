@@ -1,0 +1,47 @@
+<!-- To create out page use ! and click the emmett "!" which will produce our basic web page structure.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- We need to have a sample video and a sample image that we place inside of our Anchors Images Videos and Iframes folder. -->
+    <!-- If "click here" is not present in the tag line then there will not be anything displayed on the page and no link for rerouting will be visible. Likewise if we are creating another link say for a math website. We would want to link from the main page. So for instance to re-route to the Algebra page, we would type Algebra instead of click here, and then link that specific page. Or if it were for calculus we would type Calculus instead of "click here" and link the calculus page. The Algebra or Calculus pages domain name would take place of where we have typed "https://google.com" If we want the link to open in a new tab then we would type target="_blank". If we do not use the target="_blank" command then the page will open in the same window. Which is what we generally are accustomed to when searching the internet or clicking on links in a website. Replace https://google.com with https://amazon.com and notice the difference. Then change it back to https://google.com. Now change https://google.com back to https://amazon.com. Now let's use a new heading so let's place an <h1></h1> around the first rerouting link. Then let's make a break with the <br></br> bracket and anchor it. Then we will reroute to google. Notice that Amazon opens in a new tab. Google opens up on the same tab. But GOogle is smaller, why? Because Amazon is using h1. Place the google code inside the same H1 and see what happens. You will notice Google is under Amazon and is now the same size!-->
+
+    <h1><a href="https://amazon.com" target="_blank">Amazon</a> <br><a href="https://google.com"> Google</a></br>
+    <br><a href="About link page.html" target="_blank"> About Page</a></h1>
+    <br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"><img src="/Anchors Images VIdeos and Iframe Tags/Button.jpg" alt="HTML logo"></a> 
+
+    <!-- Go to grepper.com and get an API to have random images or videos show up on your website each time it is refreshed or visited. You can also go to Pexel.com or Pixabay.com for uncopywritten no cost images and videos.-->
+
+    <br><a href="/All basic HTML tags/All Basic HTML Tags.html"> All Basic HTML Tags Website Link</a>
+    <br><img src="https://picsum.photos/200"></img>
+
+    <!-- For a non random video. CONTROLS is to add the play button and other controls to the video. Loop makes it continuous and autoplay makes the video play automatically.-->
+    <video src="/Anchors Images VIdeos and Iframe Tags/sample_video.mp4 (240p).mp4" controls autoplay loop> </video>
+
+    <!--To embed a video simply go to youtube or another source and you can embed the video by clicking the share button or the embed video button.-->
+
+    
+
+   <br> <iframe width="560" height="315" src="https://www.youtube.com/embed/ik1SkGcGLM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+   <!-- The difference between the a anchor tag and the iframe tag. The anchor tag allows you to link to another website. Whereas the iframe tag in a sense brings the whole website onto the current website you are looking at.-->
+
+   <iframe src="https://bing.com" width="480px"></iframe>
+
+   <!-- Only certain websites will allow you to add iframe or embed the website. If you try to add google instead of Bing, then you will notice it doesn't work. Because Google doesn't allow you to iframe their website. As we can see by running the server again, we will notice that we get an error stating that "google refused to connect"-->
+
+   <iframe src="https://google.com" width="600px"></iframe>
+
+   
+
+   </body>
+   </html>
+
+
+   

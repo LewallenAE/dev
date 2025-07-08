@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Property in CSS</title>
+
+    <style>
+
+/* If we add an image and don't specify the class */
+        img{
+            width: 150px;
+            height: 150px;
+        }
+/* Specification for class tag "one" */
+        .one img{
+            width: 200px;
+            height: 350px;
+            float: left;
+            margin-right: 15px ;
+        }
+
+/* Specification for class tag "two" */
+        .two img{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-left: 30px;
+        }
+
+/* Specification for class tag "three" */
+/* Notice how the margin tags move the text */
+        .three img{
+                width: 300px;
+                height: 300px;
+                float: inline-start;
+                margin-top: 40px;
+        }
+
+/* Background-color & color for one */
+        .one {
+            background-color: chocolate;
+            color: ivory;
+        }
+/* Background-color & color for two */
+        .two {
+            background-color: salmon;
+            color: yellow        
+        }
+/* Background-color & color for three */
+        .three {
+            background-color: black;
+            color: white;
+        }
+
+/* Background-color & color for four */
+        .four {
+            background-color: crimson;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+
+        <header>
+            <h1>Float and Clear</h1>
+        </header>
+        <main>
+
+<!-- p.name is a shortcut for the p tag with a class name -->
+
+<!-- We can make the image a certain size using inline code, or we can use the CSS utilizing the img{} tag to make the image smaller. -->
+
+<!-- Comment the width line and make the image a certain width or height using the img{}  tag.-->
+
+<!-- The clear tag will push content down from either the left, right, or both sides -->
+            <div>
+                <p class="one";
+                style="clear: right;">
+                    <img src="/800px-Hummingbird.jpg"; width="200">
+                    <br>
+                    
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perspiciatis quaerat ipsum, perferendis quisquam aliquam ea hic nisi doloremque inventore quos ipsa laudantium architecto delectus assumenda maxime? Iure distinctio perspiciatis debitis, aperiam possimus sed laborum quos exercitationem culpa consectetur voluptatibus facere recusandae, mollitia dolorum! Quibusdam animi minus, eligendi, officiis aspernatur ipsum sapiente impedit autem placeat dolorem in tempora? Neque sapiente dicta, hic et ea quia eligendi necessitatibus at, iusto odio animi deleniti eos itaque labore dolorem tenetur architecto, doloremque repudiandae veniam unde. Voluptatem enim ratione quos soluta recusandae natus numquam fugiat pariatur, quasi cupiditate aut! Optio dignissimos exercitationem accusamus saepe error molestiae, in, ducimus labore eum excepturi, quibusdam velit! Quibusdam laboriosam reprehenderit officiis dolorem. Odio est culpa alias quaerat corrupti adipisci et non obcaecati fuga sed assumenda illo atque excepturi nam reprehenderit, saepe fugit, quasi vero inventore? Quaerat tempore, ipsum provident facilis dolore quo itaque hic fugit enim asperiores ut. Ab in enim deserunt provident corrupti. Enim a libero iste optio assumenda deserunt quaerat sunt mollitia eaque ratione provident dicta, hic tempore, vel reiciendis temporibus itaque animi alias doloremque saepe, blanditiis magni nobis veritatis aliquam? Corrupti amet molestiae molestias maxime officiis? Tempore odit aspernatur ipsa reprehenderit perferendis, iusto nulla corrupti officiis praesentium ducimus, vitae eius soluta repellendus fuga architecto quis optio quia recusandae! Fugiat, veniam ipsam? Esse mollitia consectetur cum et, veniam repellendus minus tempora temporibus cupiditate natus neque optio atque error nobis dolores voluptas nam suscipit nulla, amet ea beatae? Quibusdam reiciendis quam obcaecati? Voluptates facilis beatae eveniet cum!
+                </p>
+            </div>
+
+            <div>
+                <p class="two"
+                style="clear: left;">
+                    <img src="/800px-Hummingbird.jpg"; width="200"> 
+                    <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro a ab ipsum! Pariatur modi, neque possimus odit maxime quae cupiditate molestiae nostrum, doloribus totam culpa incidunt excepturi vitae nihil assumenda. Blanditiis vel cum nemo esse ipsa eius, corporis dignissimos facilis quas eligendi sed eaque iure sit ab porro maiores soluta, maxime hic iusto adipisci. Assumenda, reiciendis unde natus cumque accusamus molestias! Quos odio, molestias quae tempore ut atque dolorum, eius saepe ipsum, nulla asperiores ratione. Facilis placeat incidunt quisquam natus autem accusamus, hic dolor cum, expedita dicta eveniet id voluptas ut soluta perspiciatis suscipit architecto excepturi inventore in labore. Rerum maiores, explicabo voluptatibus vero vitae ea. Magnam laudantium blanditiis corporis non distinctio dignissimos vero dolor autem ducimus, assumenda aperiam odio ipsa excepturi maxime praesentium consequuntur ipsum eos cum dolore fugiat dicta? Nulla possimus doloribus libero fugiat autem excepturi voluptates corrupti dicta omnis esse est beatae voluptatibus totam dolor, consequatur molestias id quisquam, saepe debitis consectetur voluptate. Iusto cum voluptates ducimus magnam nulla autem vitae magni dolores quas sapiente ipsam repellendus in, aperiam corporis adipisci veniam officia perspiciatis culpa numquam temporibus asperiores? Ab, voluptas. Nobis vero odio voluptate nihil harum inventore ratione mollitia sed nesciunt a voluptatum eum deserunt libero illum, culpa explicabo nulla hic maiores modi dolorum, debitis autem? Dolorem adipisci numquam, mollitia voluptas perferendis quis consequuntur provident repudiandae animi culpa doloremque omnis quaerat odio, esse consequatur temporibus sed repellat eos rerum quidem voluptates! Odio provident, sed vero, culpa nostrum iusto quibusdam repudiandae itaque totam atque recusandae, non magni quis.</p></div>
+
+            <div>
+                <p class="three";
+                style="clear: both;">
+            
+                    <img src="/800px-Hummingbird.jpg"; width="200"> 
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe exercitationem laborum suscipit? Totam, animi quia fugiat harum deleniti obcaecati? Eius dolorum neque voluptatibus blanditiis dolor assumenda ad nesciunt repudiandae, quas nostrum quo dolorem unde ab dolores, quam, veniam non hic illo facilis delectus! Cumque vero, rem temporibus voluptate veritatis perferendis adipisci facere doloremque? Modi accusamus totam asperiores voluptate hic excepturi officia tempora nesciunt! Nesciunt explicabo eaque similique aspernatur esse culpa porro nisi provident dicta dolor assumenda soluta deleniti architecto, natus eius ipsam. Eius repellat error libero dicta sed neque optio, assumenda magni doloribus, quae eveniet consequuntur facilis voluptatem sunt quo in ratione commodi quasi beatae, excepturi accusantium quia repellendus? Accusantium quam sint placeat explicabo maiores nihil iusto eum deserunt alias adipisci voluptate exercitationem molestiae aperiam cupiditate porro similique neque, blanditiis quo dolore accusamus dolorum! Repellat ex provident commodi minus ratione, cum mollitia rerum magni voluptate dolores, reiciendis beatae autem? Facere distinctio ipsum dolore porro culpa aspernatur, recusandae maxime a doloremque cumque enim, quibusdam, eos iste animi laboriosam. Repellendus commodi eaque dolor. Est non optio, odit id at omnis vel tempora suscipit laudantium sed dicta officia accusamus deleniti hic libero excepturi quisquam aspernatur illo quae voluptatum. Expedita iusto harum ullam repellendus vero ab dolores id, dicta nostrum? Animi sed aut magnam reprehenderit porro nulla vitae. Fuga placeat minima deserunt. Culpa doloremque, aliquid nam porro odit reprehenderit quia iure dolor. Quam corrupti deleniti ullam mollitia commodi et, soluta eveniet nobis possimus temporibus alias sint officiis pariatur incidunt numquam id blanditiis! Explicabo! 
+            </p>
+        </div>
+
+        <div>
+            <br>
+            <p class="four">
+                <img src="/800px-Hummingbird.jpg";
+                width="400";
+                height="400">
+
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere neque beatae iste repellendus atque provident consequatur exercitationem a possimus, non dicta eius accusantium, praesentium voluptatem? Reiciendis laborum quod qui suscipit dolor commodi voluptatem exercitationem veritatis doloribus eveniet. Ab a voluptate dolore quod expedita accusantium in, porro veniam? Et, optio. Exercitationem quaerat nihil vitae voluptatibus animi? Dolore tenetur laboriosam voluptas delectus temporibus a beatae quisquam velit ad corrupti rem tempora, blanditiis culpa aut voluptatem repellat quasi harum quam praesentium, vel perferendis aliquid? Laborum eius id dignissimos quae culpa quis sapiente alias ducimus, enim tempora, impedit blanditiis accusamus aliquid voluptates nemo, et nam suscipit quam laboriosam tempore debitis. Dicta assumenda, sed expedita eius a autem qui obcaecati possimus delectus nulla illum nihil, nostrum ex repellat sint enim repellendus veritatis, exercitationem doloremque error. Voluptates, accusamus quis adipisci odio nisi sunt optio quod eos modi impedit aspernatur nulla, nemo voluptas officiis vero molestias veritatis blanditiis sint. Consectetur odio neque ipsam magni et architecto, animi deleniti expedita tempora maiores repudiandae, reprehenderit similique soluta vitae cupiditate hic adipisci blanditiis magnam tenetur suscipit dolorem ex cumque natus quo? Fugit nihil molestiae laboriosam ducimus sint aspernatur autem excepturi impedit, distinctio libero placeat atque, vero, nostrum nulla quae provident voluptatem beatae cum dicta eaque commodi dolor illum explicabo iste. Aspernatur, praesentium repellat natus reiciendis laudantium ipsa voluptatem. Eligendi laboriosam, sapiente, eius nulla dignissimos beatae deleniti labore culpa dolorem tempore suscipit eum incidunt, ipsum quisquam. Culpa, assumenda corrupti, quisquam nisi quasi, tempora quos autem neque sed ullam consequuntur placeat? Provident?</p>
+        </div>
+        </main>
+
+    
+</body>
+</html>

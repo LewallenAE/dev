@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering text in a class block element</title>
+
+    <style>
+
+
+        /* Put the alignment in the parent and the specifics like color in the child  */
+
+        div.container3 {
+
+            
+            height: 10em;
+            border: ridge 2px black;
+            background-color: burlywood;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        /* div.container3 p{
+
+            background-color: yellow;
+            
+        } */
+
+        #yellow p{
+
+            background-color: yellow;
+            /* height: 10em; */
+            border: ridge 2px black;
+            display: flex;
+            align-items: center;
+            justify-content: center
+
+        }
+           
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="container3" id="yellow">
+        <p>This paragraph</p>
+    </div>
+</body>
+</html>

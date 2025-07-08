@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Buttons and Links</title>
+    <style>
+        .container{
+            width: 350px;
+            margin: auto;
+            padding: 10px;
+            border: solid black;
+            background-color: burlywood;
+            
+        }
+/* Text decoration to remove the underline from the link will not work if we do not specify the tag. Since we are using the ancher (a) tag we must use .container a */
+
+        .container a{
+            text-decoration: none;
+            background-color: burlywood;
+            color: blue;
+            border: 2px dotted black;
+            border-radius: 5px;
+        }
+/* Hovering over the link */
+        .container a:hover{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+/* If the link has been clicked */
+        .container a:visited{
+            color: black;
+}
+
+/*Active selector if you visit any link or button it becomes active and showcases different properties but it is generally better and easier to stick with visited and hover tags. */
+
+        /* .container a:active{
+            color: cornflowerblue;
+            
+        } */
+
+
+        .cookie{
+            width: 200px;
+            margin: auto;
+            padding: 10px;
+            border: 2px dotted black;
+            background-color: darkgoldenrod;
+            color: cadetblue;
+            border-radius: 5px;
+        }
+
+        .btn{
+            color: crimson;
+            background-color: gold;
+            border-radius: 5px;
+
+
+        }
+
+        .btn:active{
+            background-color: aliceblue;
+            color: black;
+
+        }
+
+        .btn:hover{
+            background-color: rgb(233, 28, 28);
+            color: darkmagenta;
+/* Pointer produces the hand with pointer finger. */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- div.name will automatically make the div with the named class, use div.container for this one. -->
+    <div class="container">
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, modi adipisci! Deleniti soluta voluptatem asperiores libero nihil iure nulla velit!</p>
+
+            <a href="https://google.com" target="
+        ">Google - Click Here</a><button class="btn">Submit</button>
+    </div>
+
+    <div class="cookie">
+
+<!-- Adding a submit <button>  -->
+        <p>
+            <a href="https://thebigmansworld.com/healthy-birthday-cake-protein-cookies/"; target="_blank">This is an amazing low / no carb cookie recipe!</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive and Media Queries in CSS</title>
+
+    <!-- Note that nothing will be displayed if we launch the webpage, however if we use inspect element. Then we will see what we have typed and specified in the syntax. -->
+    <style>
+
+        html{
+            font-size: 20px;
+
+        }
+
+        .container{
+            border: 2px solid black;
+            display: none;
+            text-align: center;
+
+        }
+
+        /* This is a smart phone will be displayed if we go under 600 pixels */
+
+        @media only screen and (max-width: 600px){
+            #box1{
+                display: block;
+                background: burlywood;
+                font-size: 2rem;
+                text-align: center;
+
+            }
+
+        }
+
+        /* This is a tablet will be displayed between 600 and 900 pixels. */
+        @media only screen and (min-width: 600px) and (max-width: 900px){
+            #box2{
+                display: block;
+                background-color: salmon;
+                color: antiquewhite;
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
+
+        /* Max width of PC can be about 1312 pixels. */
+        @media only screen and (min-width:900px) and (max-width: 1312px){
+            #box3{
+                display: block;
+                background: black;
+                color: bisque;
+                font-size: 4rem;
+                text-align: center;
+
+            }
+        }
+
+        /* Min width for ultrawide monitor is going to be above 1312 pixels. Notice that an inline display will not center*/
+
+        @media only screen and (min-width:1312px) and (max-width:3000px){
+            #box4{
+                display: inline;
+                background-color: gold;
+                color: blue;
+                font-size: 5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<!-- div.container#box$*4 will automatically build four lines with the class of container and the unique id of box1 - 4.-->
+
+<!-- We will use @media only screen and () -->
+
+
+<body>
+    <div class="container" id="box1">This is a Smartphone</div>
+    <div class="container" id="box2">This is a Tablet</div>
+    <div class="container" id="box3">This is a PC monitor</div>
+    <div class="container" id="box4">This is a Ultrawide Monitor</div>
+
+   
+
+   
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <!-- Changing the color to olive green utilizing the CSS selectors style sheet. -->
+    <link rel="stylesheet" href="/CSS/CSS Selectors.css">
+    
+    <style>
+        body{
+            background-image: url(/Images/Clown.jpg);
+            /* background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+            background-position: fixed;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!-- Placing text in multiple colors -->
+    <h1>CSS Selectors</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias saepe laborum sint minima atque, ab dolorum quisquam quos neque aut, explicabo dignissimos. Fugiat vitae ullam, eligendi harum est rerum ut laboriosam aut aliquid magni obcaecati!</p>
+
+    <p style="color: darkviolet;""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta saepe maiores dolorum officiis aliquam! Eligendi cupiditate quis est excepturi dolorum earum voluptates, id deleniti sunt minima nobis vero sequi animi! </p> 
+
+    <p style="color: goldenrod;">This is a magnificent course to take</p>
+
+    <!-- Place the next line in the div container, the div container tag does not change the color. Which willl remain as the same color in the style sheet which is dark olive green-->
+
+    <div>
+        <p style="color: darkmagenta;">I am going to recommend this course to <span>all of my </span>friends.</p></div>
+    
+    <!-- If we only want to style one of the lines of text, as we have already done. You can also use an ID selector. Use the # in the style sheet that we have linked and use the ID name, it will then color that specific line with the unique ID tag that specific color.-->
+
+    <p id="secondparagraph">Using the p tag and making a unique ID allows us to style a single paragraph or sentence.</p>
+    
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellendus quod nulla esse ut dolorem eius ipsam, enim aperiam commodi nihil obcaecati hic dignissimos accusantium ab cumque omnis molestiae placeat assumenda labore fugiat libero rerum saepe. Consequuntur provident iure assumenda!</p>
+
+</body>
+</html>
