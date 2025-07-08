@@ -1,0 +1,32 @@
+.display-property-1{
+    background-color: burlywood;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+
+.display-property-2 {
+    font-weight: bold;
+    color: darkblue;
+    display: inline-block;
+}
+
+.display-property-3 {
+
+    background-color: lightgreen;
+    width: auto;
+    height: auto;
+    display: inline-block;
+
+}
+
+.display-property-4 {
+
+    background-color: lightcoral;
+    width: auto;
+    height: auto;
+    display: inline-block;
+
+}
+

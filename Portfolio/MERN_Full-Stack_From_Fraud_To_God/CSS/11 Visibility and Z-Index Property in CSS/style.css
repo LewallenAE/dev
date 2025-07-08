@@ -1,0 +1,147 @@
+.wrapper1 {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.wrapper2 {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.box {
+    width: 200px;
+    height: 120px;
+    border: solid 3px black;
+}
+
+#red {
+    background-color: red;
+    border: solid 2px black;
+}
+
+
+#green {
+    background-color: green;
+    visibility: hidden;  /* leaves a blank space */
+    border: solid 2px black;
+}
+
+
+#blue {
+    background-color: blue;
+    display: none; /* completely removes without blank space */
+}
+
+
+#yellow {
+    background-color: yellow;
+}
+
+
+/* so let's say we wanted to create the flag of Mexico or Italy */
+
+#mexGreen {
+
+    display: flex;
+    background-color: green;
+    height: 300px;
+    width: 200px;
+
+}
+
+#mexWhite {
+
+    display: flex;
+    background-color: white;
+    background-image: url('https://freesvg.org/img/GoldenEagleWithSnake.png');
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 200px;
+    
+
+}
+
+#mexRed {
+
+    display: flex;
+    background-color: red;
+    height: 300px;
+    width: 200px;
+
+}
+
+#italyGreen {
+
+    background-color: green;
+    height: 300px;
+    width: 200px;
+    
+}
+
+
+#italyWhite {
+
+    background-color: white;
+    height: 300px;
+    width: 200px;
+
+}
+
+
+#italyRed {
+
+    background-color: red;
+    height: 300px;
+    width: 200px;
+
+}
+
+
+
+.stack {
+    display: flex;
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#zIndex1 {
+
+    background-color: red;
+    position: relative; /* the boxes are by default static and they can't be static
+    if we want to change the z-index */
+    z-index: 1;
+    
+
+}
+
+#zIndex2 {
+
+    background-color: orange;
+    position: relative;
+    z-index: 50;
+    left: -30px;
+    top: -50px;
+
+
+}
+
+#zIndex3 {
+
+    background-color: yellow;
+    position: relative;
+    z-index: 100;
+    left: 50px;
+    top: -200px;
+
+
+}
